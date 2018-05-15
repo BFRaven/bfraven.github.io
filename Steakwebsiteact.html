@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Steak Activity</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    // Write code here!
+      var eatSteak= confirm ("Do you eat Steak?");
+      var birthYear = prompt("What Year were you born?");
+
+      var currentYear = new Date().getFullYear();
+      var age = currentYear-birthYear;
+      
+
+      if (eatSteak) {
+        document.write ("Here is a Steak Sandwhich");
+        }
+
+    else {
+        document.write ("Here is the Tofu-Stir Fry!");
+    }
+
+    if (age < 21) {
+        document.write ("No Sake for you!");
+    }
+
+    else {
+        document.write ("Here's your Sake, Enjoy!")
+    }
+    </script>
+
+  </body>
+</html>
