@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Single AJAX</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
+    var title = "harry+potter+and+the+goblet+of+fire";
+    var queryURL = "https://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
+    var actors = "";
+    var writers = "";
+    var ratings = "";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+      actors = response.Actors;
+      var allActors = actors.split(",");
+
+      writers = response.Writer;
+      var allWriters = writers.split(",");
+
+      ratings = response.Ratings;
+      
+      for(var i=0; i<allActors.length; i++) {
+        console.log("Actor: " + allActors[i])
+      }
+      
+      for(var i=0; i<allWriters.length; i++) {
+        console.log("Writer: " + allWriters[i])
+      }
+
+      for(var i=0; i<ratings.length; i++) {
+        console.log("Ratings: " + ratings[i].Source)
+      }
+    });
+// ---------------------------------------------------------
+
+    console.log("This console.log will probably happen first because of asynchronicity.");
+    var x = 2;
+    var y = 10;
+    var z = 13;
+    console.log("We can also assign some variables and do some arithmetic while we wait too: 2 + 10 + 13 = ", x + y + z);
+  </script>
+
+</body>
+
+</html>
