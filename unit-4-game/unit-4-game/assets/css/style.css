@@ -1,0 +1,121 @@
+body {
+    background-image: url(../images/black-space-wallpaper-1.jpg);
+    /* background-color: #0c0d0e; */
+}
+
+
+
+
+/* .container { */
+    /* background-image: url(../images/black-space-wallpaper-1.jpg) */
+    
+/* } */
+
+#title {
+    background-color: brown;
+    text-align: center;
+    
+}
+
+#instructions {
+    background-color: black;
+    /* background-image: url(../images/universo5.jpg); */
+    /* background-repeat: no-repeat; */
+    background-size: 570px 288px;
+    opacity: 0.9;
+    text-align: center;
+    
+}
+
+#compNumber {
+     /* background-color: green; */
+     background-image: url(../images/main_butterfly_nebula_full_full.jpg);
+     background-repeat: no-repeat;
+     background-size: 380px 210px;
+     text-align: center;
+     padding-top: 30px;
+     /* opacity: 0.9; */
+     /* background-position: center; */
+    
+}
+
+#wins-losses {
+    background-color: black;
+    height: 200px;
+    padding-top: 50px;
+}
+
+/* .yourScore { */
+    /* background-color: blue; */
+/* } */
+
+.row {
+    border: 2px;
+    /* border-color: black; */
+    /* border-style: solid; */
+}
+
+.col-md-2 {
+    border: 2px;
+    /* border-color: black; */
+    /* border-style: solid; */
+    padding: 0;
+    margin: 10px 10px 0px 10px;
+}
+
+.col-md-3 {
+    border: 2px;
+    /* border-color: black; */
+    /* border-style: solid; */
+}
+
+.col-md-9 {
+    border: 2px;
+    /* border-color: black; */
+    /* border-style: solid; */
+}
+
+/* .col-md-4 { */
+    /* position: absolute; */
+    /* left: 0px; */
+    /* top: 0px; */
+    /* z-index: 1; */
+/* } */
+
+p {
+    text-align: center;
+    color: bisque;
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+}
+
+
+#scoreBox { 
+    height: 140px;
+    background-color: black;
+    margin: 10px 0px 0px;
+  } 
+
+  #yourScore {
+      height:30px;
+      background-color: black;
+      margin: 10px 0px 0px;
+      opacity: 0.9;
+  }
+
+img {
+    height: 200px;
+    margin: 10px 0px 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 10px rgba(249, 243, 243, 0.56);
+}
+/* img#air.element { */
+    /* height: 200px; */
+/* } */
