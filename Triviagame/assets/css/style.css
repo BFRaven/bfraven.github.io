@@ -1,3 +1,35 @@
 body {
     text-align: center;
+    background-image: url(../images/hallway-matrix-background-vector.jpg);
+}
+
+.jumbotron-fluid {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-radius: 30px;
+    height: 400px;
+    margin: 100px 140px;
+    text-align: center;
+    background-image: url(../images/071003617_iconl.jpeg);
+    opacity: 0.9;
+}
+
+h1 {
+    font-family:'Press Start 2P', cursive;
+}
+
+p {
+  font-family: 'Quantico', sans-serif;
+
+}
+
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
+
+div {
+    display: block;
 }
