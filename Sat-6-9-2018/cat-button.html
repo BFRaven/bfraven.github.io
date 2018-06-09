@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Magical Cat Button</title>
+</head>
+
+<body>
+  <button id="cat-button">magical cat button</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    //sets event for user to click on html for id #cat-button
+    $("#cat-button").on("click", function() {
+
+      //create a variable equal to api address to call upon later
+      // on html with unique key.
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
+
+      // jQuery method of getting the images from the API. At the start of the
+      // event this method calls on the API. Queries API. CRUD create user account read user account update or delete user account.
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      // This method refers to after calling the API and getting a response, waiting for it and executing it.
+        .then(function(response) {
+
+        // The API will retrieve an image for you from its library, by making a variable to hold it.
+          var imageUrl = response.data.image_original_url;
+
+          // creating a variable to make an image tag,
+          var catImage = $("<img>");
+          
+          // adding attributes to img, eg styling, class ids etc.
+          //putting the random image that API allowed you to have access to, to display in the img tag,
+        
+          catImage.attr("src", imageUrl);
+          catImage.attr("alt", "cat image");
+
+          //actually displaying the image in the web page. prepend allows you to see the
+          // new image instead of append which sends to image to the end of the page.
+          $("#images").prepend(catImage);
+        });
+    });
+  </script>
+</body>
+
+</html>
