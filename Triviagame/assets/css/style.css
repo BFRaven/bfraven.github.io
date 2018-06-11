@@ -8,22 +8,30 @@ body {
     padding-right: 0px;
     padding-left: 0px;
     border-radius: 30px;
-    height: 400px;
+    height: 1150px;
     margin: 100px 140px;
     text-align: center;
     background-image: url(../images/071003617_iconl.jpeg);
     opacity: 0.9;
 }
 
-h1 {
+h1, h2 {
     font-family:'Press Start 2P', cursive;
+    font-weight: bolder;
 }
 
-p {
+p, .questions {
   font-family: 'Quantico', sans-serif;
-
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 20px;
+  color: darkgreen;
 }
 
+.radio-inline {
+    font-weight: bolder;
+    font-size: 18px;
+}
 
 ::after, ::before {
     box-sizing: border-box;
@@ -32,4 +40,11 @@ p {
 
 div {
     display: block;
+}
+
+span {
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family:'Press Start 2P', cursive;
 }
