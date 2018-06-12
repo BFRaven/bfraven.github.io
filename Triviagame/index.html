@@ -24,7 +24,7 @@
          <br>
          <br>
 
-        <form action="submission.html" method="get" onsubmit="return is_checked()" >
+        <!-- <form action="submission.html" method="get" onsubmit="return is_checked()" > -->
          <div>
           <p class="questions"> Which actor played the role of the chosen one in the Matrix?</p>
           <label class="radio-inline"><input type="radio" name="optradio1">Nicolas Cage</label>
@@ -45,7 +45,7 @@
             <div>
             <p class="questions">In which real life city was the Matrix filmed at?</p>
             <label class="radio-inline"><input type="radio" name="optradio3">Chicago</label>
-            <label class="radio-inline"><input type="radio" name="optradio3" id="optradio3_Sydney">Sydney</label>
+            <label class="radio-inline"><input type="radio" name="optradio3" value= "Sydney" id="optradio3_Sydney">Sydney</label>
             <label class="radio-inline"><input type="radio" name="optradio3">Tokyo</label>
             <label class="radio-inline"><input type="radio" name="optradio3">New York</label>
             </div>
@@ -55,13 +55,13 @@
               <label class="radio-inline"><input type="radio" name="optradio4">Numbers</label>
               <label class="radio-inline"><input type="radio" name="optradio4">Unbroken ciphers</label>
               <label class="radio-inline"><input type="radio" name="optradio4">Hierogyphs</label>
-              <label class="radio-inline"><input type="radio" name="optradio4" id="optradio4_Sushi"> Sushi Recipes</label>
+              <label class="radio-inline"><input type="radio" name="optradio4" value= "Sushi" id="optradio4_Sushi"> Sushi Recipes</label>
             </div>
 
                 <div>
                 <p class="questions">Which actor played the role of Agent Smith?</p>
                 <label class="radio-inline"><input type="radio" name="optradio5">Tommy Lee Jones</label>
-                <label class="radio-inline"><input type="radio" name="optradio5" id="optradio5_Hugo">Hugo Weaving</label>
+                <label class="radio-inline"><input type="radio" name="optradio5" value = "Hugo" id="optradio5_Hugo">Hugo Weaving</label>
                 <label class="radio-inline"><input type="radio" name="optradio5">Harrison Ford</label>
                 <label class="radio-inline"><input type="radio" name="optradio5">Josh Brolin</label>
                 </div>
@@ -70,7 +70,7 @@
                 <div>
                   <p class="questions"> What is the name of the gravity-defying backbend effect?</p>
                   <label class="radio-inline"><input type="radio" name="optradio6">"Anti-gravity"</label>
-                  <label class="radio-inline"><input type="radio" name="optradio6" id="optradio6_Bullet">"Bullet Time"</label>
+                  <label class="radio-inline"><input type="radio" name="optradio6" value="Bullet" id="optradio6_Bullet">"Bullet Time"</label>
                   <label class="radio-inline"><input type="radio" name="optradio6">"The Matrix Portal"</label>
                   <label class="radio-inline"><input type="radio" name="optradio6">"The Matrix Effect"</label>
                 </div>
@@ -79,7 +79,7 @@
                     <p class="questions"> Who offered the blue and red pill to Neo?</p>
                     <label class="radio-inline"><input type="radio" name="optradio7">Moshimo</label>
                     <label class="radio-inline"><input type="radio" name="optradio7">Trinity</label>
-                    <label class="radio-inline"><input type="radio" name="optradio7" id="optradio7_Morpheus">Morpheus</label>
+                    <label class="radio-inline"><input type="radio" name="optradio7" value="Morpheus" id="optradio7_Morpheus">Morpheus</label>
                     <label class="radio-inline"><input type="radio" name="optradio7">Agent Smith</label>
                     </div> 
 
@@ -89,10 +89,10 @@
                       <label class="radio-inline"><input type="radio" name="optradio8">Reality</label>
                       <label class="radio-inline"><input type="radio" name="optradio8">Messages</label>
                       <label class="radio-inline"><input type="radio" name="optradio8">Symbols</label>
-                      <label class="radio-inline"><input type="radio" name="optradio8" id="optradio8_Dreams">Dreams</label>
+                      <label class="radio-inline"><input type="radio" name="optradio8" value= "Dreams" id="optradio8_Dreams">Dreams</label>
                     </div>
-                    <input type="submit" value="done"/>
-                </form>
+                    <button onclick="stop()" id="done">Done </button>
+                <!-- </form> -->
                     <br>
                     <br>
 
