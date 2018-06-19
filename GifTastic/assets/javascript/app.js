@@ -48,10 +48,10 @@ mkBtn();
 // city + "&limit=10&offset=0&rating=G&lang=en";
 
 // $("button").on("click", function() {
-//     // Grabbing and storing the data-animal property value from the button
+//     // Grabbing and storing the data-city property value from the button
 //     var city = $(this).attr("data-city");
 
-//     // Constructing a queryURL using the animal name
+//     // Constructing a queryURL using the city name
 //     var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=rLV62Ly5BOBAjj94hICcYhdSp5and0D9&q=" +
 //       city + "&limit=10&offset=0&rating=G&lang=en";
 
@@ -82,11 +82,11 @@ mkBtn();
 //           // Setting the src attribute of the image to a property pulled off the result item
 //           cityImage.attr("src", results[i].images.fixed_height.url);
 
-//           // Appending the paragraph and image tag to the animalDiv
+//           // Appending the paragraph and image tag to the cityDiv
 //           cityDiv.append(p);
 //           cityDiv.append(cityImage);
 
-//           // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
+//           // Prependng the cityDiv to the HTML page in the "#gifs-appear-here" div
 //           $("#gifs-appear-here").prepend(cityDiv);
 //         }
 //       });
