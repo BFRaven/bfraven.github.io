@@ -1,8 +1,32 @@
 body {
     text-align: center;
+    background-image: url(../images/cartograph.jpg);
+    fill-opacity: .2;
 }
 
 .btn {
     margin: 10px;
-    color: rgba(250, 247, 94, 0.925);
+    color: hsla(170, 93%, 70%, 0.925);
+}
+
+h1 {
+
+   font-family: 'Cabin Sketch', cursive;
+    /* font-family: 'Satisfy', cursive; */
+    font-size: 100px;
+    outline-color: rgb(50, 142, 235);
+    
+}
+
+
+p {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.jumbotron {
+    background-image: url(../images/worldcities_zoyalipets_sstock.jpg);
+    opacity: .8;
 }
