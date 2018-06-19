@@ -1,29 +1,47 @@
 // variables for app
-var cities = ["berlin","paris", "prague","barcelona","new york","tokyo"];
+var cities = ["Berlin", "Paris", "Prague", "Barcelona", "New york", "Tokyo"];
 var uInput;
 var btnDisplay = $("#cityBtnDisplay");
-var newcityBtn = $("<button>");
+// var newcityBtn = $("#userCityInput");
 var cityCount = 0;
 
 // Function to create buttons for existing cities and for user to create new buttons
-//with parameters "name" and "count"
-function mkBtn(name, count) {
-    var mkDisplayBtn = $("<button>");
-    mkDisplayBtn.append("" + name)
-        .addClass("btn btn-outline-dark btn-sm gifBtn")
-        .attr("data-city", name)
-        .attr("id", "item-" + count);
-    // Append those new buttons to the button display section of HTML
-    btnDisplay.append(mkDisplayBtn);
-    cityCount++;
-};
 
-// Function to create buttons for pre-defined cities in array
-function initialDisplay() {
-    for(var i=0; i<cities.length; i++) {
-        mkBtn(cities[i], cityCount);
-    };
-};
+function mkBtn() {
+    // prevent repeat buttons
+    btnDisplay.empty();
+
+    // loop through city array
+    for (var i = 0; i < cities.length; i++) {
+
+        //Dynamically making buttons for cities in array
+        var b = $("<button>");
+        // Dynamically adding the class and style
+        b.addClass("btn btn-dark city");
+        //Adding data-attr with value of city index i
+        b.attr("data-city", cities[i]);
+        //Button text with value of city at array index
+        b.text(cities[i]);
+        // adding button to the HTML portion of app
+        btnDisplay.append(b);
+
+    }
+
+}
+
+// event function when one button is clicked
+$("#addCity").on("click", function(event) {
+    event.preventDefault();
+
+    uInput = $("#userCityInput").val()
+
+    cities.push(btnDisplay);
+
+    mkBtn();
+
+});
+
+mkBtn();
 
 
 // var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=rLV62Ly5BOBAjj94hICcYhdSp5and0D9&q=" +
