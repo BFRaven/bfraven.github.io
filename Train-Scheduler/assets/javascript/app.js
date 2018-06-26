@@ -56,9 +56,15 @@ $(document).ready(function () {
         nextTrain = moment().add(minsAway, "minutes");
         newTrain = moment(nextTrain).format("hh:mm A");
         
-        // need to convert time entry to be able to also input military time.
+    // need to make the mins away count-down be in real time.        
         
-        
+
+    // clear the field of the user input when add train button is clicked.
+    // $('input:text, textarea').blur(function(){
+    //     if (!this.value.length) {
+    //         this.value = this.defaultValue;
+    //     }
+    // });
         
         
         // adding values to data-base.
@@ -72,7 +78,11 @@ $(document).ready(function () {
             minsAway : minsAway,
             dateAdded: firebase.database.ServerValue.TIMESTAMP // takes timesstamp of when the data goes in database.
 
-        }); // end data-basr push method 
+
+
+        }); // end data-base push method 
+
+        
 
     });// end on-click function
 
