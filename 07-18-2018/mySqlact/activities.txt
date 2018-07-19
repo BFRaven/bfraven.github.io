@@ -1,0 +1,68 @@
+USE programming_db;
+
+CREATE TABLE programming_languages (
+id INTEGER(10)AUTO_INCREMENT NOT NULL PRIMARY KEY,
+languages VARCHAR(100)NOT NULL,
+rating INTEGER(10)
+);
+
+INSERT INTO programming_languages (id, languages, rating)
+VALUES
+(1, "python", 6),
+(2, "java", 5),
+(3, "js", 8),
+(4, "ruby", 7);
+
+INSERT INTO programming_languages(languages, rating)
+VALUES("css", 9);
+
+INSERT INTO programming_languages(languages, rating)
+VALUES("html", 2);
+SELECT*FROM programming_languages;
+
+
+
+CREATE TABLE favorite_foods (
+food VARCHAR(100)NOT NULL,
+score BOOLEAN NOT NULL
+);
+
+INSERT INTO favorite_foods (food, score)
+VALUES
+("enchiladas", 10),
+("hamburgers", 5),
+("watermelon", 7),
+("chocolate", 10);
+
+SELECT*FROM favorite_songs;
+
+CREATE TABLE favorite_songs (
+song VARCHAR(100)NOT NULL,
+artist VARCHAR(100),
+score INTEGER(10)
+);
+
+INSERT INTO favorite_songs (song, artist, score)
+VALUES
+("japanese_denim", "daniel_caesar", 10),
+("iron_man", "black_sabbath", 7),
+("hello", "adele", 6), 
+("cheap_thrills", "sia", 6);
+
+SELECT*FROM favorite_movies;
+
+
+CREATE TABLE favorite_movies (
+id INTEGER(10)AUTO_INCREMENT NOT NULL PRIMARY KEY,
+movie VARCHAR(100)NOT NULL,
+five_times BOOLEAN DEFAULT FALSE,
+score INTEGER(10)
+);
+
+INSERT INTO favorite_movies (id, movie, score)
+VALUES
+(1, "jurassic park", 8),
+(2, "the_godfather", 5),
+(3, "the_lion_king", 9),
+(4, "predator", 7),
+(5, "The_princess_bride", 4);
